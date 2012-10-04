@@ -13,6 +13,11 @@ def generate_expressions(numbers):
 def main():
     BigNum = 2
     OtrNum = 3
+    print "How many Big num?"
+    BigNum = int(raw_input("= "))
+    OtrNum = 5 - BigNum
+
+
     numbers = (
         [random.randrange(1, 11) for i in xrange(OtrNum)]
         +[random.choice([25,50,75,100]) for i in xrange(BigNum)]
